@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;500&family=Moon+Dance&family=Poiret+One&family=Poppins:wght@400;500;700&family=The+Nautigal:wght@400;700&family=Ubuntu:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Projeto Level 07</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">
+            Vamos contar uma história?
+        </h1>
+    </header>
+    <form id="data_history">
+        <main class="full-content">
+            <section class="content-01">
+
+                <div class="box">
+                    <p>Nome do personagem?</p>
+                    <input type="text" name="name" id="name" placeholder="Nome" required="required" />
+                </div>
+                <div class="box">
+                    <p>Personagem</p>
+                    <select name="charGen" id="charGen" onchange="selectGen(this.value)">
+                        <option value="" selected disabled>Escolha o personagem </option>
+                        <option value="campones">Um camponês</option>
+                        <option value="duende">Um duende</option>
+                        <option value="mago">Um mago</option>
+                        <option value="cavaleiro">Um cavaleiro</option>
+
+                    </select>
+                </div>
+                <div class="box">
+                    <p>Gênero da história</p>
+                    <select name="genHistory" id="genHistory" onchange="histGen(this.value)">
+                        <option selected disabled>Escolha o gênero</option>
+                        <option value="ets">História de ETs</option>
+                        <option value="dragoes">História de dragões</option>
+                        <option value="gigantes">história de gigantes</option>
+                    </select>
+                </div>
+            </section>
+            <section class="content-02">
+                <div class="box">
+                    <p>Escolha uma arma</p>
+                    <select name="weappons" id="weappons" onchange="weapponType(this.value)">
+                        <option selected disabled>Escolha a arma</option>
+                        <option value="sword">Uma espada</option>
+                        <option value="laser">Arma de raios laser</option>
+                        <option value="staff">Cajado de amendoeira</option>
+                        <option value="stick">Bastão de cedro vermelho</option>
+                    </select>
+                </div>
+
+                <div class="box">
+                    <p>Escolha um acontecimento</p>
+                    <select name="events" id="events" onchange="occurrence(this.value)">
+                        <option selected disabled>Escolha o acontecimento</option>
+                        <option value="buzz">Um zumbido</option>
+                        <option value="bang">Um estrondo</option>
+                        <option value="light">Uma luz intensa</option>
+                        <option value="wind">Um tornado</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>Aponte o local</p>
+                    <select name="place" id="place" onchange="setPlace(this.value)">
+                        <option selected disabled>Escolha o lugar</option>
+                        <option value="county">Um condado</option>
+                        <option value="Kingdom">Um reino</option>
+                        <option value="village">Um vilarejo</option>
+                        <option value="city">Uma cidade</option>
+                    </select>
+                </div>
+            </section>
+        </main>
+    </form>
+    <div class="tell-the-story">
+        <div id="text_h2">" Conte a sua história..."</div>
+        <div class="button">
+            <button onclick="createHistory()" id="button">Conte a história</button>
+        </div>
+    </div>
+
+    <div class="modal-back"></div>
+    <div class="modal">
+        <div class="modal-contente">
+            <div id="story">
+
+            </div>
+        </div>
+    </div>
+    <script src="script/index.js"></script>
+</body>
+
+</html>

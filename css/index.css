@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height:100vh;
+  }
+  
+  body {
+      background: linear-gradient(-45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+  }
+  
+  /* ani,ação do bacground */
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+  header {
+      width: 100%;
+      margin: auto;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background-attachment: fixed;
+      background: #0a0c0e9a;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+      padding: 1rem;
+      color: aliceblue;
+  }
+
+  header h1 {
+    font-family: 'The Nautigal', cursive;
+    font-size: 64px;
+    animation: lightsOn 3s infinite alternate;
+  }
+
+  /*Animação do título*/
+  @keyframes lightsOn {
+
+    from {
+      opacity: 0.2;
+      color: #ffffff;
+    }
+  
+    to {
+      color: #0000ff;;
+      opacity: 1.4;
+    }
+  
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem;
+  }
+
+section {
+  width: 40vw;
+  margin: auto;
+  margin-top: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0.75rem;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.box {
+  width: 60%;
+  margin: auto;
+  padding: 2rem;
+  color: #f0f8ff;
+  text-align: left;
+  font-size: 1.5rem;
+  font-family: 'Poiret One', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box input {
+  background-color: #0563af;
+  color: white;
+  padding: 0.75rem;
+  width: 15.625rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: inherit;
+  appearance: inherit;
+  outline: none;
+}
+
+.box ::placeholder {
+  color: #ffffff;
+}
+
+.box select {
+  background-color: #0563af;
+  color: white;
+  padding: 10px;
+  width: 15.625rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+.box::before {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 45px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+.box:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box select option {
+  padding: 35px;
+}
+
+.tell-the-story {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+#text_h2 {
+  color: aliceblue;
+  font-size: 2.3rem;
+  font-family: 'Moon Dance', cursive;
+  text-transform: uppercase;
+  padding: 1.5rem;
+}
+
+.button button {
+  color: white;
+  padding: 10px;
+  width: 15.625rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: .3s ease-in;
+}
+
+.button button:hover {
+  background: rgba(255, 255, 255, 0.308);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+  
+  
+ 
