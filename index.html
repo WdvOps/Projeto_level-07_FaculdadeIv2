@@ -6,11 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;500&family=Moon+Dance&family=Poiret+One&family=Poppins:wght@400;500;700&family=The+Nautigal:wght@400;700&family=Ubuntu:wght@400;500;700&display=swap"
-        rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+
     <link rel="stylesheet" href="css/index.css">
     <title>Projeto Level 07</title>
 </head>
@@ -21,8 +19,8 @@
             Vamos contar uma história?
         </h1>
     </header>
-    <form id="data_history">
-        <main class="full-content">
+    <main class="full-content">
+        <form id="data_history">
             <section class="content-01">
 
                 <div class="box">
@@ -83,8 +81,8 @@
                     </select>
                 </div>
             </section>
-        </main>
-    </form>
+        </form>
+    </main>
     <div class="tell-the-story">
         <div id="text_h2">" Conte a sua história..."</div>
         <div class="button">
@@ -93,12 +91,14 @@
     </div>
 
     <div class="modal-back"></div>
-    <div class="modal">
-        <div class="modal-contente">
-            <div id="story">
+    <div class="modal" id="modalSlider">
 
-            </div>
+
+        <div id="story">
+            <div id="type" class="typewrite"></div>
         </div>
+
+        <button onclick="exit()" id="btnExit">X</button>
     </div>
     <script src="script/index.js"></script>
 </body>
