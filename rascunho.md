@@ -242,13 +242,7 @@ function endHistory() {
     const modal = document.querySelector('.modal');
     const type = document.getElementById('type')
 
-    for (let i = 0; i < newHist.length; i++) {
-        if (i == this.newHist[newHist.length - 1]) {
-            modal.style.display = "none"
-            type.innerHTML = '';
-        }
-        console.log(newHist)
-    }
+    if(i )
 
     setTimeout("endHistory()", endTime);
 };
